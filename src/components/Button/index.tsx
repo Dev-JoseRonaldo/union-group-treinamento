@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
 
-import './styles.css'
+import './styles.scss'
 
 // informamos que o ButtonProps deve receber todas as propriedades
 // que um botão do React tem, mais as propriedades que nós estamos definindo

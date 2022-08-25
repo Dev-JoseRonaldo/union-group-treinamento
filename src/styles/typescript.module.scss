@@ -1,4 +1,4 @@
-.buttons{
+.buttons,.toolsBox{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,4 +6,6 @@
   gap: 1rem;
 
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
+
