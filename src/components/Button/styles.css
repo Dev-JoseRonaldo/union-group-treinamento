@@ -1,0 +1,43 @@
+:root {
+  --primary: #f231a5;
+  --secundary: #2e8b80;
+  --outline: #ffffff;
+  --outline-border: #000000;
+}
+
+.button {
+  width: max-content;
+
+  background: transparent;
+  color: white;
+  font-size: 0.8rem;
+
+  border: 0;
+  border-radius: 3px;
+}
+
+.button-primary {
+  background-color: var(--primary);
+}
+
+.button-secondary {
+  background-color: var(--secundary);
+}
+
+.button-outline {
+  color: var(--outline-border);
+  background-color: var(--outline);
+  border: 1px solid var(--outline-border);
+}
+
+.button-small {
+  padding: 0.5rem 2rem;
+}
+
+.button-medium {
+  padding: 0.8rem 3rem;
+}
+
+.button-fullWidth {
+  width: 100vw;
+}
