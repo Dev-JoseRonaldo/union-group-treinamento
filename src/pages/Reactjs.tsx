@@ -1,4 +1,4 @@
-import { BaseSyntheticEvent} from "react"
+import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState} from "react"
 import { Link } from "react-router-dom"
 
 import { ButtonReact } from "../components/ButtonReact"
@@ -8,37 +8,50 @@ import styles from '../styles/reactjs.module.scss'
 
 
 export const Reactjs = () => {
-  function handleSubmit(event: BaseSyntheticEvent) {
-		/* 
-			desabilita o comportamento padrão do form que é recarregar a página 
-			ao fazer submit
-		*/
+  	// criamos nossos states
+    const [name, setName] = useState<string>('')
+    const [birthDate, setBirthDate] = useState<string>('')
+    const [work, setWork] = useState<string>('')
+
+  function handleSubmit(event: FormEvent) {
     event.preventDefault()
+  }
 
-		// pega os valores dos inputs
-    console.log( event.target[0].value )
-    console.log( event.target[1].value )
-    console.log( event.target[2].value )
-
-
+  // função que irá atualizar nossos states quando o valor do input for alterado
+  function handleOnChange(event: ChangeEvent, setValue: Dispatch<SetStateAction<string>>) {
+    const target = event.target as HTMLInputElement;
+    setValue(target.value)
   }
   return (
     <>
       <h1>Página do React.js</h1>
       <Link to="/">Voltar</Link>
-
       <section className={styles.homeContainer}>
         <form className={styles.formContainer} onSubmit={handleSubmit}>
-          <Input label="Nome" name="name" placeholder="Nome" />
+          <Input 
+            label="Nome" 
+            name="name" 
+            placeholder="Nome"
+            value={name}
+            onChange={(event) => handleOnChange(event,setName)}
+          />
 
           <Input
             type="date"
             label="Data de nascimento"
             name="birthDate"
             placeholder="Data de nascimento"
+            value={birthDate}
+            onChange={(event) => handleOnChange(event,setBirthDate)}
           />
 
-          <Input label="Profissão" name="work" placeholder="Profissão" />
+          <Input 
+            label="Profissão" 
+            name="work" 
+            placeholder="Profissão" 
+            value={work}
+            onChange={(event) => handleOnChange(event,setWork)}
+          />
 
           <ButtonReact type="submit">Cadastrar</ButtonReact>
         </form>
