@@ -1,8 +1,8 @@
 import { ChangeEvent, Dispatch, FormEvent, SetStateAction, useState} from "react"
-import { Link } from "react-router-dom"
 
 import { ButtonReact } from "../components/ButtonReact"
 import { Input } from "../components/Input"
+import { Header } from "../components/Header"
 
 import styles from '../styles/reactjs.module.scss'
 
@@ -24,8 +24,8 @@ export const Reactjs = () => {
   }
   return (
     <>
+      <Header />
       <h1>Página do React.js</h1>
-      <Link to="/">Voltar</Link>
       <section className={styles.homeContainer}>
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <Input 

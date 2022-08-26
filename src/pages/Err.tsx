@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom"
+import { Header } from "../components/Header"
 
 export const Err = () => {
   return (
     <>
-      <h1>Página não encontrada</h1>
-      <Link to="/">Voltar</Link>
+      <Header />
+      <h1>Página não encontrada</h1> 
     </>
   )
 }

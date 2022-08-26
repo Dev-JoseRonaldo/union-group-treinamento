@@ -11,7 +11,7 @@ export const Input = ({ label, name, onChange, value, ...rest }:InputProps) => {
   return (
     <div className="input-container">
       <label htmlFor={name}>{label}</label>
-      {!!value && `- ${value}`}
+      {value && `- ${value}`}
       <input
         type="text"
         name={name}

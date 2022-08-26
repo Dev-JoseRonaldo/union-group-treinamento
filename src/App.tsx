@@ -3,7 +3,7 @@ import Router from '../routes';
 import './styles/global.scss'
 
 function App() {
-  return (
+  return (   
     <Router />
   )
 }

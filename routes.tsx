@@ -2,11 +2,11 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import { Home } from "./src/pages/Home";
 import { Err } from "./src/pages/Err";
 import { Reactjs } from "./src/pages/Reactjs";
 import { Typescript } from "./src/pages/Typescript";
 import { Sass } from "./src/pages/Sass";
+import { Home } from "./src/pages/Home";
 
 const Router: React.FC = () => {
   return(

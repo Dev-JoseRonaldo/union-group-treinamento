@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
 import { Button } from "../components/Button"
+import { Header } from "../components/Header"
 import { ToolsBox, ToolsBoxProps  } from "../components/ToolsBox"
 
 import styles from '../styles/typescript.module.scss'
@@ -63,8 +63,9 @@ export const Typescript = () => {
   }
   return (
     <>
+      <Header />
+  
       <main>
-        <Link to="/">Voltar</Link>
         <h1>React com Typescript</h1>
         <section className={styles.buttons}>
           <h2>Uso do Component Button</h2>
