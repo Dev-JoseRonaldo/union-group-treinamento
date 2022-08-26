@@ -1,43 +1,55 @@
-:root {
-  --primary: #f231a5;
-  --secundary: #2e8b80;
-  --outline: #ffffff;
-  --outline-border: #000000;
-}
+$primary-color: #f231a5;
+$secondary-color: #3cd3c1;
+$text-light: #fff;
 
 .button {
-  display: block;
-
-  background: transparent;
-  color: white;
-  font-size: 0.8rem;
-
   border: 0;
-  border-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: filter 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  span {
+    font-size: 16px;
+    color: $text-light;
+  }
 }
 
 .button-primary {
-  background-color: var(--primary);
+  background: $primary-color;
 }
 
 .button-secondary {
-  background-color: var(--secundary);
+  background: $secondary-color;
 }
 
 .button-outline {
-  color: var(--outline-border);
-  background-color: var(--outline);
-  border: 1px solid var(--outline-border);
+  border: 1px solid $primary-color;
+  background: none;
+
+  & > span {
+    color: $primary-color;
+  }
 }
 
 .button-small {
-  padding: 0.5rem 2rem;
+  height: 39px;
+  width: 120px;
 }
 
 .button-medium {
-  padding: 0.8rem 3rem;
+  height: 42px;
+  width: 183px;
 }
 
 .button-fullWidth {
-  width: 100vw;
+  width: 100%;
 }
