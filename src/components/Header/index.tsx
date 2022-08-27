@@ -13,7 +13,7 @@ export const Header = () => {
             <ul>
               <li><Link to="/reactjs">React.js</Link></li>
               <li><Link to="/typescript">Typescript</Link></li>
-              <li><Link to="/desafio">Desafio</Link></li>
+              <li><Link to="/challenge">Desafio</Link></li>
             </ul>
           </nav>
         </div>

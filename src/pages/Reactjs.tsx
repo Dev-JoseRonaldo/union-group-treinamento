@@ -4,10 +4,17 @@ import { ButtonReact } from "../components/ButtonReact"
 import { Input } from "../components/Input"
 import { Header } from "../components/Header"
 
+import { useContext } from "react"
+import { MyContext } from "../contexts/myContext"
+
 import styles from '../styles/reactjs.module.scss'
 
 
 export const Reactjs = () => {
+    // context API  
+    const data  = useContext(MyContext)
+
+    console.log('console da Home =>', data)
   	// criamos nossos states
     const [name, setName] = useState<string>('')
     const [birthDate, setBirthDate] = useState<string>('')
@@ -56,7 +63,7 @@ export const Reactjs = () => {
 
             <ButtonReact type="submit">Cadastrar</ButtonReact>
           </form>
-        </section>
+        </section>      
       </main>
     </>
   )
