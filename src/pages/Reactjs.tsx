@@ -25,37 +25,39 @@ export const Reactjs = () => {
   return (
     <>
       <Header />
-      <h1>Página do React.js</h1>
-      <section className={styles.homeContainer}>
-        <form className={styles.formContainer} onSubmit={handleSubmit}>
-          <Input 
-            label="Nome" 
-            name="name" 
-            placeholder="Nome"
-            value={name}
-            onChange={(event) => handleOnChange(event,setName)}
-          />
+      <main>
+        <h1>Página do React.js</h1>
+        <section className={styles.homeContainer}>
+          <form className={styles.formContainer} onSubmit={handleSubmit}>
+            <Input 
+              label="Nome" 
+              name="name" 
+              placeholder="Nome"
+              value={name}
+              onChange={(event) => handleOnChange(event,setName)}
+            />
 
-          <Input
-            type="date"
-            label="Data de nascimento"
-            name="birthDate"
-            placeholder="Data de nascimento"
-            value={birthDate}
-            onChange={(event) => handleOnChange(event,setBirthDate)}
-          />
+            <Input
+              type="date"
+              label="Data de nascimento"
+              name="birthDate"
+              placeholder="Data de nascimento"
+              value={birthDate}
+              onChange={(event) => handleOnChange(event,setBirthDate)}
+            />
 
-          <Input 
-            label="Profissão" 
-            name="work" 
-            placeholder="Profissão" 
-            value={work}
-            onChange={(event) => handleOnChange(event,setWork)}
-          />
+            <Input 
+              label="Profissão" 
+              name="work" 
+              placeholder="Profissão" 
+              value={work}
+              onChange={(event) => handleOnChange(event,setWork)}
+            />
 
-          <ButtonReact type="submit">Cadastrar</ButtonReact>
-        </form>
-      </section>
+            <ButtonReact type="submit">Cadastrar</ButtonReact>
+          </form>
+        </section>
+      </main>
     </>
   )
 }
