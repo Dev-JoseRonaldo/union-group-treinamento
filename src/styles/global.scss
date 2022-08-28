@@ -6,6 +6,7 @@
 
 :root {
   --white: #ffffff;
+  --background-color: #F5F5F5;
 
   --gray-900: #121214;
 }
@@ -24,7 +25,7 @@
 }
 
 body {
-  background: var(--white);
+  background: var(--background-color);
   color: var(--gray-900);
 }
 

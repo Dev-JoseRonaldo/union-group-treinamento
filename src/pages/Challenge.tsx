@@ -1,11 +1,14 @@
 import { Header } from "../components/Challenge/Header"
+import { Post } from "../components/Challenge/Post"
 
 export const Challenge = () => {
   return (
     <>
       <Header />
       <main>
-        <h1>Página do Challenge</h1>
+        <Post />
+        <Post />
+        <Post />
       </main>
     </>
   )
