@@ -1,0 +1,53 @@
+:root {
+  --hover-bg-color: #e1e1f0;
+  --hover-color: #0000fc;
+}
+
+.container {
+  flex: 1;
+
+  &__iconBox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+
+    &:hover {
+      cursor: pointer;
+      background-color:var(--hover-bg-color);
+    }
+  }
+
+  &__otherBox {
+    margin-bottom: 1rem;
+    > p {
+      color: #242424;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 1.5rem 1rem 0.5rem ;
+    }
+  }
+
+  &__socialsIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      border-radius: 8px;
+      
+      color: #404040;
+      font-size: 1.25rem;
+
+      &:hover {
+        color: var(--hover-color);
+        background-color: var(--hover-bg-color);
+      }
+    }
+  }
+}
