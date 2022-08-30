@@ -29,14 +29,17 @@ export const Header = () => {
           </div>   
           {isLogged ? (
             <div className={styles.headerRightBox}>
-              <a href="#">Create Post</a>
-              <RiNotification3Line size={26}/>
+              <a className={styles.createPostButton} href="#">Create Post</a>
+              <a className={styles.mobileSearch} href="#"><FiSearch className={styles.headerSearchIcon} /></a>
+              <a className={styles.notificationIcon} href="#"><RiNotification3Line /></a>
+              
               <img src="https://github.com/Dev-JoseRonaldo.png" alt="Foto de perfil de José Ronaldo" />
             </div>
           ): (
             <div className={styles.headerRightBox}>   
-              <button onClick={handleLogin} type='submit'>Log in</button>        
-              <a href="#">Create account</a>
+              <button onClick={handleLogin} type='submit'>Log in</button>  
+              <a className={styles.mobileSearch} href="#"><FiSearch className={styles.headerSearchIcon} /></a>      
+              <a className={styles.createAccount} href="#">Create account</a>
             </div>
           )}  
         </div>

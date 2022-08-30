@@ -5,6 +5,15 @@
 
 .container {
   flex: 1;
+  max-width: 20%;
+
+  @media (max-width: 1024px) {
+    max-width: 25%;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 
   &__iconBox {
     display: flex;
