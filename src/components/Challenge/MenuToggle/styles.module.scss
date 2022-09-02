@@ -1,0 +1,34 @@
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  
+  padding: 0.675rem;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background 0.15s;
+
+  @media (max-width: 640px) {
+    display: flex;
+  }
+
+  &:hover {
+    background: var(--hover-bg-color);
+
+    .menuToggle__Item  {
+      background: var(--button-color);
+    }
+  }
+
+  .menuToggle__Item {
+    width: 25px;
+    height: 3px;
+    background: var(--gray-800);
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+}

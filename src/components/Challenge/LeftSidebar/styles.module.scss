@@ -1,8 +1,3 @@
-:root {
-  --hover-bg-color: #e1e1f0;
-  --hover-color: #0000fc;
-}
-
 .container {
   flex: 1;
   max-width: 20%;
@@ -14,7 +9,7 @@
   @media (max-width: 640px) {
     display: none;
   }
-
+  
   &__iconBox {
     display: flex;
     align-items: center;
@@ -31,7 +26,7 @@
   &__otherBox {
     margin-bottom: 1rem;
     > p {
-      color: #242424;
+      color: var(--gray-800);
       font-size: 1rem;
       font-weight: 700;
       margin: 1.5rem 1rem 0.5rem ;
@@ -50,7 +45,7 @@
       padding: 0.5rem;
       border-radius: 8px;
       
-      color: #404040;
+      color: var(--gray-700);
       font-size: 1.25rem;
 
       &:hover {

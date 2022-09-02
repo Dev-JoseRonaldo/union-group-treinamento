@@ -16,7 +16,7 @@ export const Challenge = () => {
           <Post />
           <Post />
         </section>
-        <RightSidebar />
+        <RightSidebar />      
       </main>
     </>
   )

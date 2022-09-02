@@ -5,6 +5,8 @@ import styles from './styles.module.scss'
 import { RiNotification3Line } from 'react-icons/ri'
 
 import logoImg from '../../../assets/logo.png'
+import { FaBars } from 'react-icons/fa'
+import { MenuToggle } from '../MenuToggle'
 
 export const Header = () => {
   const [isLogged, setIsLogged] = useState(false);
@@ -19,6 +21,7 @@ export const Header = () => {
     <header className={styles.header}>
         <div className={styles.contentHeader}> 
           <div className={styles.headerLeftBox}>
+            <MenuToggle />
             <img src={logoImg} alt="logo Union Group" />
             <div className={styles.searchBox}>
               <input placeholder='Search...' type="text" />

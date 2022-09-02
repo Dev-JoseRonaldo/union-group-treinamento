@@ -1,6 +1,6 @@
 .header {
-  background-color: #20232A;
-  color: #ffffff;
+  background-color: var(--bakground-gray);
+  color: var(--white);
 
   box-shadow: 0 5px 10px -10px rgba(0,0,0,0.7);
 }
@@ -27,7 +27,7 @@
       transition: color 0.15s;
 
       &:hover {
-        color: #51AFC7;
+        color: var(--hover-bg-color);
       }
     }
   }
