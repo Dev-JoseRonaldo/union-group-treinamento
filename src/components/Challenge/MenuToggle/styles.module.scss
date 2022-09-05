@@ -19,16 +19,72 @@
   &:hover {
     background: var(--hover-bg-color);
 
-    .menuToggle__Item  {
+    .menuToggle__Item {
       background: var(--button-color);
     }
   }
 
-  .menuToggle__Item {
+  &__Item {
     width: 25px;
     height: 3px;
     background: var(--gray-800);
     border-radius: 4px;
     transition: background 0.15s;
+  }
+
+  &__Content {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--white);
+    padding: 1rem 0.5rem;
+
+    @media (max-width: 640px) {
+      display: block;
+    }
+
+    @media (max-width: 378px) {
+      width: 80%;
+    }
+    /*    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.652);
+    }
+    */
+  }
+
+  &__Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 1.75rem 7px;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--black);
+    }
+  }
+
+  &__closeIcon {
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--hover-bg-color);
+    }
+
   }
 }

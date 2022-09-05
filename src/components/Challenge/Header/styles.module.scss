@@ -1,4 +1,5 @@
 .header {
+ 
   color: var(--gray-700);
   box-shadow: 0 5px 10px -10px rgba(0,0,0,0.7);
   margin-bottom: 1rem;
@@ -80,6 +81,10 @@
     }
   }
 
+  .modalBox {
+    position: relative;
+  }
+
   .createPostButton, .createAccount {
     border: 1px solid var(--button-color);
     padding: 0.5rem 0.9375rem;
@@ -129,7 +134,7 @@
     display: flex;
   }
 
-  > img {
+  img {
     width: 36px;
     border: 1px solid rgb(0, 0, 0,0.5);
     border-radius: 50%;

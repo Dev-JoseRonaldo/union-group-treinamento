@@ -7,16 +7,16 @@ import styles from './styles.module.scss'
 export const Header = () => {
   return(
     <header className={styles.header}>
-        <div className={styles.contentHeader}>      
-          <img src={logoImg} alt="logo Union Group" />    
-          <nav>
-            <ul>
-              <li><Link to="/reactjs">React.js</Link></li>
-              <li><Link to="/typescript">Typescript</Link></li>
-              <li><Link to="/challenge">Desafio</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div className={styles.contentHeader}>      
+        <img src={logoImg} alt="logo Union Group" />    
+        <nav>
+          <ul>
+            <li><Link to="/reactjs">React.js</Link></li>
+            <li><Link to="/typescript">Typescript</Link></li>
+            <li><Link to="/challenge">Desafio</Link></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   )
 }

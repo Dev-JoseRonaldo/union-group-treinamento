@@ -31,13 +31,7 @@ export const Header = () => {
   
 
   return(
-
     <header className={styles.header}>
-      <ProfileModal 
-        isOpen={isProfileModal}
-        onRequestClose={handleCloseProfile}
-      />
-
       <div className={styles.contentHeader}> 
         <div className={styles.headerLeftBox}>
           <MenuToggle />
@@ -58,11 +52,17 @@ export const Header = () => {
             <a className={styles.mobileSearch} href="#"><FiSearch className={styles.headerSearchIcon} /></a>
             <a className={styles.notificationIcon} href="#"><RiNotification3Line /></a>
             
-            <img 
-              src="https://github.com/Dev-JoseRonaldo.png" 
-              alt="Foto de perfil de José Ronaldo" 
-              onClick={handleOpenProfile}
-            />
+            <div className={styles.modalBox}>
+              <ProfileModal 
+                isOpen={isProfileModal}
+                onRequestClose={handleCloseProfile}
+              />
+              <img 
+                src="https://github.com/Dev-JoseRonaldo.png" 
+                alt="Foto de perfil de José Ronaldo" 
+                onClick={handleOpenProfile}
+              />
+            </div>
           </div>
         ): (
           <div className={styles.headerRightBox}>   

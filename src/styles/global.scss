@@ -56,3 +56,45 @@ button {
   text-decoration: none;
   list-style: none;
 }
+
+.react-modal-overlay { 
+  max-width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.react-modal-content {
+  position: absolute;
+  top: 60px;
+  right: 200px;
+  width: 100%;
+  max-width: 250px;
+  background: var(--white);
+  padding: 3rem;
+
+  border-radius: 0.24rem;
+  border: 1px solid rgba(189, 189, 189, 0.6);
+  box-shadow: 0px 0px 2px rgba(189, 189, 189,0.5);
+
+  @media(max-width: 5760px) {
+    width: 95%;
+  }
+  @media(max-width: 480px) {     
+    padding: 2rem 1rem;
+  }
+}
+
+.react-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  border: 0;
+  background: transparent;
+
+  transition: filter 0.2s;
+  
+
+}

@@ -5,13 +5,15 @@ interface ProfileModalProps {
   onRequestClose: () => void;
 }
 
+Modal.setAppElement('#root');
+
 export function ProfileModal({isOpen, onRequestClose} : ProfileModalProps){
   return(
     <Modal 
     isOpen={isOpen}
     onRequestClose={onRequestClose}   
-    //overlayClassName="react-modal-overlay"  
-    //className="react-modal-content"
+    overlayClassName="react-modal-overlay"  
+    className="react-modal-content"
     >
       <div>Modal</div>
     </Modal>

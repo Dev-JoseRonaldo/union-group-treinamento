@@ -22,7 +22,7 @@ import styles from './styles.module.scss'
 
 export const LeftSidebar = () => {
   return (
-    <aside className={styles.container}>
+    <div className={styles.container}>
       <nav>
         <ul>
           <li>
@@ -141,6 +141,6 @@ export const LeftSidebar = () => {
           <li><a href="#"><FiTwitch /></a></li>
         </ul>
       </nav>
-    </aside>
+    </div>
   )
 }

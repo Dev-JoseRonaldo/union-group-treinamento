@@ -35,7 +35,6 @@ export const Post = () => {
             <a href="#">#programming</a>
           </div>
         </div>
-
         <div className={styles.reactionsContainer}>
             <div className={styles.reactionsContainer__leftSide}>
               <div className={styles.reactionsContainer__reactionBox}>

@@ -6,7 +6,7 @@ export const Home = () => {
     <>
       <Header />
       <main>
-        Home
+        
       </main>
     </>
   )
